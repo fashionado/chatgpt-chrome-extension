@@ -12,3 +12,8 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     chrome.tabs.sendMessage(tab.id, { type: "ASK_CHATGPT" });
   }
 });
+
+// Listen for when the user runs command
+chrome.action.onClicked.addListener((tab) => {
+  chrome.tabs.sendMessage(tab.id, { type: "ASK_CHATGPT" });
+});

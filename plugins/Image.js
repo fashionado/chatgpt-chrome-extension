@@ -1,4 +1,5 @@
-import fetch from "node-fetch";
+//import fetch from "node-fetch";
+import fetch from 'isomorphic-fetch'
 
 export default {
   rules: [
